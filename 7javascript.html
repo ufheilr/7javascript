@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+
+    <!-- Internal (Inline) CSS -->
+    <style>
+        .red{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="id" class="class">Helo, World!</h1>
+    <button onclick="changeText()">Click me</button>
+
+    <!-- Internal (Inline) JS -->
+    <script>
+        // Declaring Variables
+        var number = 10; // Number variable
+        var text = 'Hello, World!'; //String Variable
+        var isTrue = true; // Boolean Variable
+
+        //Changing the variables
+        var number = number + 5; // adds 5 to the number variable
+        text = 'JavaScript is fun!'; //Changing variable values
+        console.log(isTrue); //Outputting vallues to the console
+
+        //Selecting elements
+        var elementById = document.getElementById('id'); //Selecting elements by ID
+        var elementsByClass = document.getElementsByClassName('class'); //Selecting elements by class name
+
+        //Changing an elemnent's class
+        var element = document.getElementById('unique'); //Select the element by ID or class
+        element.classList.add('new-class'); // Add a class to the element
+        element.classList.remove('old-class'); // Remove a class from the element
+        element.classList.toggle('toggle-class'); //Toggle a class (adds the class if it is not present, removes if present)
+
+        //Functions
+        function changeText() { 
+            var text = document.getElementById('id'); // Select the element by ID or class
+            text.classList.toggle('red'); //Adds the class 'red' to the elemnt if it is no present, and removes if it is present
+        }
+    </script>
+</body>
+</html>
